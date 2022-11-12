@@ -28,6 +28,7 @@ const show = () => {
       console.log(error);
     });
 };
+
 onMounted(() => {
   show();
 });
@@ -43,7 +44,10 @@ onMounted(() => {
    <div class="relative p-2">
    <div class="col-6 shadow-md rounded-md py-1 px-2 bg-gray-700 text-white">
         <div class="text-sm font-medium font-gotham">odds</div>
-        <div class="text-2xl">1200</div>
+        <div class="text-2xl" v-for="(odd, index) in odds" :key="index">
+            <h1>{{odd.home_team}}</h1>
+
+        </div>
       </div>
       </div>
 
