@@ -16,7 +16,7 @@ const next = () => {
     .get(url, payload)
     .then((response) => {
       console.log(response.data);
-       odds.value = response.data.data;
+      odds.value = response.data.data;
     })
     .catch((error) => {
       console.log(error);
@@ -28,7 +28,6 @@ onMounted(() => {
 });
 </script>
 <template>
-   
   <div
     class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4"
   >
@@ -61,11 +60,7 @@ onMounted(() => {
         </tr>
       </thead>
       <tbody class="divide-y">
-        <tr
-          class="text-sm divide-x"
-          v-for="(odd, index) in odds"
-          :key="index"
-        >
+        <tr class="text-sm divide-x" v-for="(odd, index) in odds" :key="index">
           <td class="py-2 px-3" v-text="odd.details"></td>
           <td class="py-2 px-3" v-text="odd.group"></td>
           <td class="py-2 px-3" v-text="odd.title"></td>
@@ -75,14 +70,14 @@ onMounted(() => {
   </div>
   <div>
     <div class="col-6 row-auto text-left">
-    <button
-      class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-    >
-      <router-link :to="{ name: 'register' }" class="button primary"
-        >Ticket Types</router-link
+      <button
+        class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
       >
-    </button>
-  </div>
+        <router-link :to="{ name: 'register' }" class="button primary"
+          >prediction</router-link
+        >
+      </button>
+    </div>
     <!-- <router-link :to=""></router-link> -->
   </div>
 </template>
