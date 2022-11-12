@@ -20,8 +20,8 @@ const show =() =>{
     }
     const url = `https://odds.p.rapidapi.com/v1/odds`;
     axios .get(url ,payload).then((response) => {
-        console.log(response.data)
-        odds.value =response.data.data
+        console.log(response.data.data);
+        odds.value =response.data.data;
         
     })
     .catch((error) => {
@@ -35,8 +35,8 @@ onMounted(() => {
 </script>
 <template>
     <div class="col-6 row-auto text-center">
-        <button class="bg-red-500 hover:bg-red-700 ...">
-  Hover me
+        <button class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+  Odds
 </button>
 </div>
     
@@ -53,7 +53,7 @@ onMounted(() => {
         <tr class="text-sm divide-x" v-for="(odd, index) in odds" :key="index">
           <td class="py-2 px-3" v-text="odd.home_team"></td>
           <td class="py-2 px-3" v-text="odd.commence_time"></td>
-          <td class="py-2 px-3" v-text="odd.odds"></td>
+          <td class="py-2 px-3" v-text="odd.id"></td>
         </tr>
       </tbody>
     </table>
