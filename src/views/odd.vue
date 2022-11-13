@@ -59,14 +59,15 @@ onMounted(() => {
 
 </script>
 <template>
-    <div class="relative p-4 border-b bg-gray-50">
+    <div class="relative p-4 w-1/2  border-b bg-gray-50">
  <input
-      class="rounded-md px-4 py-3 w-full border-2 border-gray-300 mb-1"
+      class="rounded-md px-4 py-3 flex justify-center w-full border-2 border-gray-300 mb-1"
       placeholder="Search by name  "
       v-model="searchValue"
       @keydown="filteredTickets"
     />
-    <div class="text-xs text-gray-400 mt-1 italic">Press Enter to search</div>
+    
+    <div class="text-xs text-gray-400 mt-1 italic ">Press Enter to search</div>
 
 
     </div>
