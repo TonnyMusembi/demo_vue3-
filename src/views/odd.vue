@@ -3,6 +3,7 @@ import { onMounted, ref } from "vue";
 
 import axios from "axios";
 const odds = ref("");
+const digits = ref("");
 const show = () => {
   const payload = {
     params: {
@@ -29,9 +30,23 @@ const show = () => {
     });
 };
 
+const generateOtp = (limit) =>{
+     digits.value = '0123456789';
+    let OTP = '';
+    for (let i =0;i<limit;i++){
+
+    }
+    return OTP;
+    console.log(OTP);
+}
+console.log(generateOtp(4));
+
 onMounted(() => {
   show();
+  generateOtp();
+
 });
+
 </script>
 <template>
   <div class="col-6 row-auto text-center">
@@ -45,7 +60,7 @@ onMounted(() => {
    <div class="col-6 shadow-md rounded-md py-1 px-2 bg-gray-700 text-white">
         <div class="text-sm font-medium font-gotham">odds</div>
         <div class="text-2xl" v-for="(odd, index) in odds" :key="index">
-            <h1>{{odd.home_team}}</h1>
+            <h1>{{odd.sport_nice}}</h1>
 
         </div>
       </div>
