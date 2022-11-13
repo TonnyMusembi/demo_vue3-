@@ -4,6 +4,7 @@ import { onMounted, ref } from "vue";
 import axios from "axios";
 const odds = ref("");
 const digits = ref("");
+const searchValue = ref("");
 const show = () => {
   const payload = {
     params: {
@@ -29,6 +30,14 @@ const show = () => {
       console.log(error);
     });
 };
+const filteredTickets =() =>{
+     if (odds.value === 0) return;
+      odds.value = odds.value.filter((odd) =>
+        odd.home_team
+          .toLowerCase()
+          .includes(searchValue.value.toLowerCase())
+      );
+}
 
 const generateOtp = (limit) =>{
     console.log(limit);
@@ -50,6 +59,17 @@ onMounted(() => {
 
 </script>
 <template>
+    <div class="relative p-4 border-b bg-gray-50">
+ <input
+      class="rounded-md px-4 py-3 w-full border-2 border-gray-300 mb-1"
+      placeholder="Search by name  "
+      v-model="searchValue"
+      @keydown="filteredTickets"
+    />
+    <div class="text-xs text-gray-400 mt-1 italic">Press Enter to search</div>
+
+
+    </div>
   <div class="col-6 row-auto text-center">
     <button
       class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
