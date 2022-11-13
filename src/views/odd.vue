@@ -31,15 +31,16 @@ const show = () => {
 };
 
 const generateOtp = (limit) =>{
+    console.log(limit);
      digits.value = '0123456789';
     let OTP = '';
     for (let i =0;i<limit;i++){
 
     }
     return OTP;
-    console.log(OTP);
+    // console.log(OTP);
 }
-console.log(generateOtp(4));
+// console.log();
 
 onMounted(() => {
   show();
