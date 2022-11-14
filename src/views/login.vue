@@ -2,6 +2,8 @@
 import { onMounted, ref } from "vue";
 import axios from "axios";
 //const net = ref("");
+const searchValue = ref("");
+
 const odds = ref("");
 const next = () => {
   const payload = {
@@ -23,21 +25,26 @@ const next = () => {
     });
   // console.log(net);
 };
+const filteredTickets = () => {
+  if (odds.value === 0) return;
+  odds.value = odds.value.filter((odd) =>
+    odd.home_team.toLowerCase().includes(searchValue.value.toLowerCase()));
+};
 onMounted(() => {
   next();
 });
 </script>
 <template>
-    <div class="col-6 row-auto text-centre">
+    <div class="col-6 row-auto flex justify-center ">
       <button
         class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
       >
         <router-link :to="{ name: 'register' }" class="button primary"
-          >Next</router-link
+          >Odds</router-link
         >
       </button>
     </div>
-  <div class="relative p-4 w-1/2 columns-md-6 border-b bg-gray-50">
+  <div class="relative-4 p-4 w-1/2  columns-md-6 border-b bg-gray-50">
     <input
       class="rounded-md px-4 py-3 flex justify-center w-full border-2 border-gray-300 mb-1"
       placeholder="Search by name  "
