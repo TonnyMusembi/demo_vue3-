@@ -28,24 +28,17 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div
-    class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4"
-  >
-    <div class="flex-shrink-0">
-      <!-- <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo" /> -->
-    </div>
-    <div>
-      <div class="text-xl font-medium text-black">ChitChat</div>
-      <p class="text-gray-500">You have a new message!</p>
-    </div>
+  <div class="relative p-4 w-1/2 columns-md-6 border-b bg-gray-50">
+    <input
+      class="rounded-md px-4 py-3 flex justify-center w-full border-2 border-gray-300 mb-1"
+      placeholder="Search by name  "
+      v-model="searchValue"
+      @keydown="filteredTickets"
+    />
+
+    <div class="text-xs text-gray-400 mt-1 italic">Press Enter to search</div>
   </div>
-  <div class="p-6 max-w-sm mx-auto" v-on:click="next">
-    <button
-      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-    >
-      Games
-    </button>
-  </div>
+  
 
   <div class="p-6 max-w-sm mx-auto">
     <h1></h1>
