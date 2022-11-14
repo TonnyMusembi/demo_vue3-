@@ -75,7 +75,7 @@ onMounted(() => {
     <button
       class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
     >
-      Odds
+      Teams
     </button>
   </div>
    <div class="relative p-2">
