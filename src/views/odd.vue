@@ -59,6 +59,15 @@ onMounted(() => {
 
 </script>
 <template>
+    <div class="col-6 row-auto text-center">
+    <button
+      class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+    >
+      <router-link :to="{ name: 'forgot_password' }" class="button primary"
+        > View Odds</router-link
+      >
+    </button>
+  </div>
     <div class="relative p-4 w-1/2 columns-md-6  border-b bg-gray-50"
     >
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" class="w-6 h-6" viewBox="0 0 24 24">
