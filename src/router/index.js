@@ -3,6 +3,8 @@ import Login from "/src/views/login.vue";
 import Register from "/src/views/register.vue";
 import Odd from "/src/views/odd.vue";
 import ForgotPassword from "/src/views/forgot_password.vue";
+import Navigation from "/src/views/navigation.vue";
+
 
 
 const routes = [{
@@ -15,7 +17,12 @@ const routes = [{
     {
         path: "/forgot_password",
         name: "forgot_password",
-        component: ForgotPassword
+        component: ForgotPassword,
+    },
+    {
+        path: "/navigation",
+        name: "navigation",
+        component: Navigation,
     },
 ];
 

@@ -37,7 +37,8 @@
               >
                 <span>Reset</span>
               </button>
-              <!-- <router-link :to="{name: ''}" class="block w-full text-center rounded-md bg-gray-600 px-3 py-2 text-white w-full">Reset password</router-link> -->
+              <br/>
+              <router-link :to="{name: 'navigation'}" class="block w-full text-center rounded-md bg-gray-600 px-3 py-2 text-white ">Reset password</router-link>
             </div>
           </div>
         </div>
