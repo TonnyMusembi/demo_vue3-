@@ -40,22 +40,54 @@ onMounted(() => {
 <template>
   <div class="relative px-4 py-3">
     <div class="text-sm text-green-800 mb-3">Reports</div>
-    <div class="grid grid-cols-4 gap-6">
+    <div class="flex gap-6 overflow-scroll">
       <div
-        class="col shadow-md rounded-md w-3/4 py-1 px-2 bg-white-700 text-black"
+        class="col shadow-md rounded-md w-full py-1 px-2 bg-white-700 text-black"
       >
         <div>
-          <svg width="20" height="20" viewBox="0 0 20 20">
+          <svg width="32" height="32" viewBox="0 0 16 16">
             <path
               fill="currentColor"
-              d="M0 4c0-1.1.9-2 2-2h7l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z"
+              fill-rule="evenodd"
+              d="M14.5 2H9l-.35.15-.65.64-.65-.64L7 2H1.5l-.5.5v10l.5.5h5.29l.86.85h.7l.86-.85h5.29l.5-.5v-10l-.5-.5zm-7 10.32-.18-.17L7 12H2V3h4.79l.74.74-.03 8.58zM14 12H9l-.35.15-.14.13V3.7l.7-.7H14v9zM6 5H3v1h3V5zm0 4H3v1h3V9zM3 7h3v1H3V7zm10-2h-3v1h3V5zm-3 2h3v1h-3V7zm0 2h3v1h-3V9z"
+              clip-rule="evenodd"
             />
           </svg>
         </div>
         <div class="text-sm font-medium">Registered Companies</div>
       </div>
       <div
-        class="col shadow-md rounded-md w-2/3 py-2 px-2 bg-white-700 text-black"
+        class="col shadow-md rounded-md w-full py-1 px-2 bg-white-700 text-black"
+      >
+        <div>
+          <svg width="32" height="32" viewBox="0 0 16 16">
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M14.5 2H9l-.35.15-.65.64-.65-.64L7 2H1.5l-.5.5v10l.5.5h5.29l.86.85h.7l.86-.85h5.29l.5-.5v-10l-.5-.5zm-7 10.32-.18-.17L7 12H2V3h4.79l.74.74-.03 8.58zM14 12H9l-.35.15-.14.13V3.7l.7-.7H14v9zM6 5H3v1h3V5zm0 4H3v1h3V9zM3 7h3v1H3V7zm10-2h-3v1h3V5zm-3 2h3v1h-3V7zm0 2h3v1h-3V9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div class="text-sm font-medium">Registered Companies</div>
+      </div>
+      <div
+        class="col shadow-md rounded-md w-full py-1 px-2 bg-white-700 text-black"
+      >
+        <div>
+          <svg width="32" height="32" viewBox="0 0 16 16">
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M14.5 2H9l-.35.15-.65.64-.65-.64L7 2H1.5l-.5.5v10l.5.5h5.29l.86.85h.7l.86-.85h5.29l.5-.5v-10l-.5-.5zm-7 10.32-.18-.17L7 12H2V3h4.79l.74.74-.03 8.58zM14 12H9l-.35.15-.14.13V3.7l.7-.7H14v9zM6 5H3v1h3V5zm0 4H3v1h3V9zM3 7h3v1H3V7zm10-2h-3v1h3V5zm-3 2h3v1h-3V7zm0 2h3v1h-3V9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div class="text-sm font-medium">Registered Companies</div>
+      </div>
+      <div
+        class="col shadow-md rounded-md w-full py-2 px-2 bg-white-700 text-black"
       >
         <div class="text-sm font-medium font-gotham">
           <svg
@@ -76,7 +108,7 @@ onMounted(() => {
         <div class="text-sm">Amount Disbursed</div>
       </div>
       <div
-        class="col shadow-md rounded-md w-3/4 py-2 px-2 bg-white-700 text-black"
+        class="col shadow-md rounded-md w-full py-2 px-2 bg-white-700 text-black"
       >
         <div class="text-sm font-medium font-gotham">
           <svg
@@ -118,7 +150,7 @@ onMounted(() => {
         <div class="text-sm">Failed Loans</div>
       </div> -->
       <div
-        class="col shadow-md rounded-md w-3/4 py-2 px-2 bg-white-700 text-black"
+        class="col shadow-md rounded-md w-full py-2 px-2 bg-white-700 text-black"
       >
         <div class="text-sm font-small font-gotham"></div>
         <div>
