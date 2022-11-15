@@ -53,3 +53,32 @@ const router = createRouter({
     routes,
 });
 export default router;
+
+router.beforeEach((to, from, next) => {
+    //check page is protected or not
+    if (to.meta.authRequired === "true") {
+        //get contact's id
+        const contactId = to.params.id;
+
+        //access check
+        if (
+            //if user is admin or super admin
+            user.role === "super_admin" ||
+            user.role === "admin" ||
+            //if user is the contact itself
+            user.id === contactId ||
+            //if user is manager and has necessary permissions
+            (user.role === "manager" &&
+                user.role.permissions.some((p) => p.key === "create-contact") &&
+                user.role.permissions.some((p) => p.key === "update-contact"))
+        ) {
+            return next();
+        } else {
+            router.push({
+                name: "Unauthorized",
+            });
+        }
+    } else {
+        return next();
+    }
+});
