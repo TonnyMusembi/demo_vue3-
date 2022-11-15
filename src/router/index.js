@@ -5,6 +5,8 @@ import Odd from "/src/views/odd.vue";
 import ForgotPassword from "/src/views/forgot_password.vue";
 import Navigation from "/src/views/navigation.vue";
 import Addproduct from "/src/views/addproduct.vue";
+import Addbranch from "/src/views/addbranch.vue";
+
 
 
 
@@ -30,6 +32,11 @@ const routes = [{
         path: "/addproduct",
         name: "addproduct",
         component: Addproduct,
+    },
+    {
+        path: "/addbranch",
+        name: "addbranch",
+        component: Addbranch,
     },
 ];
 
