@@ -1,4 +1,13 @@
 <template>
+    <div class="col-6 row-auto text-center">
+    <button
+      class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+    >
+      <router-link :to="{ name: 'barchart' }" class="button primary"
+        > dashboard</router-link
+      >
+    </button>
+  </div>
   <div class="container mx-auto w-1/2 bg-gray-100 p-5">
     <div>Add Branch</div>
     <br />

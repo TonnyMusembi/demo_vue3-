@@ -6,6 +6,8 @@ import ForgotPassword from "/src/views/forgot_password.vue";
 import Navigation from "/src/views/navigation.vue";
 import Addproduct from "/src/views/addproduct.vue";
 import Addbranch from "/src/views/addbranch.vue";
+import Barchart from "/src/views/barchart.vue";
+
 
 
 
@@ -37,6 +39,11 @@ const routes = [{
         path: "/addbranch",
         name: "addbranch",
         component: Addbranch,
+    },
+    {
+        path: "/barchart",
+        name: "barchart",
+        component: Barchart,
     },
 ];
 
