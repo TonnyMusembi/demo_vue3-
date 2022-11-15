@@ -4,6 +4,8 @@ import Register from "/src/views/register.vue";
 import Odd from "/src/views/odd.vue";
 import ForgotPassword from "/src/views/forgot_password.vue";
 import Navigation from "/src/views/navigation.vue";
+import Addproduct from "/src/views/addproduct.vue";
+
 
 
 
@@ -23,6 +25,11 @@ const routes = [{
         path: "/navigation",
         name: "navigation",
         component: Navigation,
+    },
+    {
+        path: "/addproduct",
+        name: "addproduct",
+        component: Addproduct,
     },
 ];
 
