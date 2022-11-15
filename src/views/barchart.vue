@@ -7,9 +7,13 @@ onMounted(() => {
     labels: ["January", "February", "March", "April", "May", "June"],
     datasets: [
       {
-        label: "Loans given",
+        label: "Loans",
         data: [0, 10, 5, 2, 20, 30, 45],
-        backgroundColor: "hsl(252, 82.9%, 67.8%)",
+        backgroundColor: [
+          "rgb(133, 105, 241)",
+          "rgb(164, 101, 241)",
+          "rgb(101, 143, 241)",
+        ],
 
         borderColor: "hsl(252, 82.9%, 67.8%)",
 
@@ -34,10 +38,12 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="relative p-6">
-    <div class="block md:hidden text-sm text-gray-500 mb-3">Reports</div>
+  <div class="relative px-4 py-3">
+    <div class="text-sm text-green-800 mb-3">Reports</div>
     <div class="grid grid-cols-4 gap-6">
-      <div class="col shadow-md rounded-md py-1 px-2 bg-white-700 text-black">
+      <div
+        class="col shadow-md rounded-md w-3/4 py-1 px-2 bg-white-700 text-black"
+      >
         <div>
           <svg width="20" height="20" viewBox="0 0 20 20">
             <path
@@ -48,7 +54,9 @@ onMounted(() => {
         </div>
         <div class="text-sm font-medium">Registered Companies</div>
       </div>
-      <div class="col shadow-md rounded-md py-2 px-2 bg-white-700 text-black">
+      <div
+        class="col shadow-md rounded-md w-2/3 py-2 px-2 bg-white-700 text-black"
+      >
         <div class="text-sm font-medium font-gotham">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +76,7 @@ onMounted(() => {
         <div class="text-sm">Amount Disbursed</div>
       </div>
       <div
-        class="col shadow-md rounded-md w-full py-2 px-2 bg-white-700 text-black"
+        class="col shadow-md rounded-md w-3/4 py-2 px-2 bg-white-700 text-black"
       >
         <div class="text-sm font-medium font-gotham">
           <svg
@@ -88,8 +96,29 @@ onMounted(() => {
         </div>
         <div class="text-sm">Failed Loans</div>
       </div>
+      <!-- <div
+        class="col shadow-md rounded-md w-2/3 py-2 px-2 bg-white-700 text-black"
+      >
+        <div class="text-sm font-medium font-gotham">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            class="w-6 h-6"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5z"
+            />
+          </svg>
+        </div>
+        <div class="text-sm">Failed Loans</div>
+      </div> -->
       <div
-        class="col shadow-md rounded-md w-full py-2 px-2 bg-white-700 text-black"
+        class="col shadow-md rounded-md w-3/4 py-2 px-2 bg-white-700 text-black"
       >
         <div class="text-sm font-small font-gotham"></div>
         <div>
@@ -111,7 +140,6 @@ onMounted(() => {
         <div class="text-sm">Total collections</div>
       </div>
     </div>
-
     <div
       class="grid grid-cols-3 mt-6 shadow-md border overflow-hidden bg-white"
     >
@@ -135,4 +163,5 @@ onMounted(() => {
       </div>
     </div> -->
   </div>
+  <div class="relative px-4 py-3"></div>
 </template>
