@@ -109,7 +109,7 @@ onMounted(() => {
     </button>
   </div>
   <div class="relative p-2">
-    <div class="col-6 shadow-md rounded-md py-1 px-2 bg-green-700 text-white">
+    <div class="col-6 shadow-md rounded-md py-1 px-2 bg-white-700 text-black">
       <div class="text-sm font-medium font-gotham">Home Teams</div>
       <div class="text-2xl" v-for="(odd, index) in odds" :key="index">
         <h1>{{ odd.sport_nice }}</h1>

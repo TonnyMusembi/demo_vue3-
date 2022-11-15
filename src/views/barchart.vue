@@ -37,8 +37,7 @@ onMounted(() => {
   <div class="relative p-6">
     <div class="block md:hidden text-sm text-gray-500 mb-3">Reports</div>
     <div class="grid grid-cols-4 gap-6">
-      <div class="col shadow-md rounded-md py-1 px-2 bg-blue-700 text-white">
-        <div class="text-sm font-medium">Registered Companies</div>
+      <div class="col shadow-md rounded-md py-1 px-2 bg-white-700 text-black">
         <div>
           <svg width="20" height="20" viewBox="0 0 20 20">
             <path
@@ -47,8 +46,9 @@ onMounted(() => {
             />
           </svg>
         </div>
+        <div class="text-sm font-medium">Registered Companies</div>
       </div>
-      <div class="col shadow-md rounded-md py-2 px-2 bg-green-700 text-white">
+      <div class="col shadow-md rounded-md py-2 px-2 bg-white-700 text-black">
         <div class="text-sm font-medium font-gotham">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ onMounted(() => {
         <div class="text-sm">Amount Disbursed</div>
       </div>
       <div
-        class="col shadow-md rounded-md w-full py-2 px-2 bg-gray-700 text-white"
+        class="col shadow-md rounded-md w-full py-2 px-2 bg-white-700 text-black"
       >
         <div class="text-sm font-medium font-gotham">
           <svg
@@ -89,7 +89,7 @@ onMounted(() => {
         <div class="text-sm">Failed Loans</div>
       </div>
       <div
-        class="col shadow-md rounded-md w-full py-2 px-2 bg-green-700 text-white"
+        class="col shadow-md rounded-md w-full py-2 px-2 bg-white-700 text-black"
       >
         <div class="text-sm font-small font-gotham"></div>
         <div>
