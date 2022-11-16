@@ -207,14 +207,7 @@ onMounted(() => {
       <br />
       Percentage
     </div>
-    <!-- <div class="w-1/4 bg-gray-200 rounded-full dark:bg-gray-700">
-      <div
-        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-        style="width: 45%"
-      >
-        45%
-      </div>
-    </div> -->
+
   </div>
   <div class="relative px-4 py-3"></div>
 </template>

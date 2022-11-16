@@ -8,6 +8,8 @@ import Addproduct from "/src/views/addproduct.vue";
 import Addbranch from "/src/views/addbranch.vue";
 import Barchart from "/src/views/barchart.vue";
 import Login_user from "/src/views/login_user.vue";
+import Createuser from "/src/views/createuser.vue";
+
 
 
 
@@ -50,6 +52,11 @@ const routes = [{
         path: "/login_user",
         name: "login_user",
         component: Login_user,
+    },
+    {
+        path: "/createuser",
+        name: "createuser",
+        component: Createuser,
     },
 ];
 
