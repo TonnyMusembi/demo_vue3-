@@ -34,6 +34,26 @@
           required
         />
       </div>
+            <div class="block mb-3">
+              <label for="" class="block text-sm font-medium text-black-900 mb-2"
+                >Enter new password</label
+              >
+              <input
+                class="block rounded-md w-full py-2 px-3 border outline-none focus-visible:border-blue-300"
+                placeholder=""
+               
+              />
+            </div>
+            <div class="block mb-3">
+              <label for="" class="block text-sm font-medium text-black-900 mb-2"
+                >Confirm new password</label
+              >
+              <input
+                class="block rounded-md w-full py-2 px-3 border outline-none focus-visible:border-blue-300"
+                placeholder=""
+               
+              />
+            </div>
       <div class="block px-4 py-2 text-gray-600 text-sm rounded-md"></div>
       <div class="block">
         <button

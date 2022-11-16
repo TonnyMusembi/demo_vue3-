@@ -35,7 +35,7 @@
                 class="block rounded-md w-full py-2 px-3 border outline-none focus-visible:border-cyan-400"
                 maxlength="12"
                 placeholder="07xxxxxxxx"
-                v-model="phonenumber"
+             
                 required
               />
             </div>
@@ -73,8 +73,8 @@
   </div>
   <!-- </div> -->
 </template>
-<script setup>
+// <script setup>
 
-import { ref, } from 'vue';
-const phonenumber = ref();
-</script>
+// import { ref, } from 'vue';
+// const phonenumber = ref();
+// </script>
