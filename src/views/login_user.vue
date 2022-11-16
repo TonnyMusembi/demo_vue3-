@@ -1,4 +1,13 @@
 <template>
+     <div class="col-6 row-auto flex justify-center ">
+      <button
+        class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+      >
+        <router-link :to="{ name: 'createuser' }" class="button primary"
+          >Create user</router-link
+        >
+      </button>
+    </div>
   <!-- <div class="container mx-auto w-full bg-gray-100"> -->
 
   <div class="flex justify-center h-full">
@@ -26,6 +35,7 @@
                 class="block rounded-md w-full py-2 px-3 border outline-none focus-visible:border-cyan-400"
                 maxlength="12"
                 placeholder="07xxxxxxxx"
+                v-model="phonenumber"
                 required
               />
             </div>
@@ -63,3 +73,8 @@
   </div>
   <!-- </div> -->
 </template>
+<script setup>
+
+import { ref, } from 'vue';
+const phonenumber = ref();
+</script>
