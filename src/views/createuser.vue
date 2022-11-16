@@ -1,0 +1,39 @@
+<template>
+  <div class="mx-auto w-1/2 p-5">
+    <!-- <div>Create User</div> -->
+    <br />
+    <form @submit.prevent="">
+      <div class="text-sm mb-2 text-black-500 font-medium text-center">Create User</div>
+      <div class="mb-2">
+        <label
+          for="full_names"
+          class="block mb-2 text-sm font-medium text-black-900 dark:text-black-300"
+          >Full Name</label
+        >
+        <input
+          name="full_name"
+          type="text"
+          id="text"
+          class="bg-gray-50 border border-white-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="full name "
+          required
+        />
+      </div>
+      <div class="mb-2">
+        <label
+          for="phone_number"
+          class="block mb-2 text-sm font-medium text-black-900 dark:text-black-300"
+          >Phone Number</label
+        >
+        <input
+          name="phone_number"
+          type="text"
+          id="text"
+          class="bg-gray-50 border border-white-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="phone number "
+          required
+        />
+      </div>
+    </form>
+  </div>
+</template>
