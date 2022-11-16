@@ -3,7 +3,9 @@
     <!-- <div>Create User</div> -->
     <br />
     <form @submit.prevent="">
-      <div class="text-sm mb-2 text-black-500 font-medium text-center">Create User</div>
+      <div class="text-sm mb-2 text-black-500 font-medium text-center">
+        Create User
+      </div>
       <div class="mb-2">
         <label
           for="full_names"
@@ -11,9 +13,8 @@
           >Full Name</label
         >
         <input
-          name="full_name"
+          name="full_names"
           type="text"
-          id="text"
           class="bg-gray-50 border border-white-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="full name "
           required
@@ -28,11 +29,19 @@
         <input
           name="phone_number"
           type="text"
-          id="text"
           class="bg-gray-50 border border-white-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="phone number "
           required
         />
+      </div>
+      <div class="block px-4 py-2 text-gray-600 text-sm rounded-md"></div>
+      <div class="block">
+        <button
+          type="submit"
+          class="block w-full text-center rounded-md bg-cyan-200 px-3 py-2 text-white"
+        >
+          Create
+        </button>
       </div>
     </form>
   </div>
