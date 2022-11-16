@@ -7,6 +7,7 @@ import Navigation from "/src/views/navigation.vue";
 import Addproduct from "/src/views/addproduct.vue";
 import Addbranch from "/src/views/addbranch.vue";
 import Barchart from "/src/views/barchart.vue";
+import Login_user from "/src/views/login_user.vue";
 
 
 
@@ -44,6 +45,11 @@ const routes = [{
         path: "/barchart",
         name: "barchart",
         component: Barchart,
+    },
+    {
+        path: "/login_user",
+        name: "login_user",
+        component: Login_user,
     },
 ];
 

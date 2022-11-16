@@ -38,6 +38,15 @@ onMounted(() => {
 });
 </script>
 <template>
+     <div class="col-6 row-auto flex justify-center ">
+      <button
+        class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+      >
+        <router-link :to="{ name: 'login_user' }" class="button primary"
+          >Odds</router-link
+        >
+      </button>
+    </div>
   <div class="relative px-4 py-3">
     <div class="text-sm text-green-800 mb-3">Reports</div>
     <div class="flex gap-6 overflow-scroll">
