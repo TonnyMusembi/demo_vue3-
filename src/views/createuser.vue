@@ -34,31 +34,37 @@
           required
         />
       </div>
-            <div class="block mb-3">
-              <label for="" class="block text-sm font-medium text-black-900 mb-2"
-                >Enter new password</label
-              >
-              <input
-                class="block rounded-md w-full py-2 px-3 border outline-none focus-visible:border-blue-300"
-                placeholder=""
-               
-              />
-            </div>
-            <div class="block mb-3">
-              <label for="" class="block text-sm font-medium text-black-900 mb-2"
-                >Confirm new password</label
-              >
-              <input
-                class="block rounded-md w-full py-2 px-3 border outline-none focus-visible:border-blue-300"
-                placeholder=""
-               
-              />
-            </div>
+      <div class="mb-2">
+        <label
+          for=""
+          class="block mb-2 text-sm font-medium text-black-900 dark:text-black-300"
+          >Enter new password</label
+        >
+        <input
+          name="new password"
+          type="text"
+          class="bg-gray-50 border border-white-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder=" new password"
+          required
+        />
+      </div>
+      <div class="block mb-3">
+        <label for="" class="block text-sm font-medium text-black-900 mb-2"
+          >Confirm new password</label
+        >
+        <input
+          name="Confirm new password"
+          type="text"
+          class="bg-gray-50 border border-white-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="confirm new password "
+          required
+        />
+      </div>
       <div class="block px-4 py-2 text-gray-600 text-sm rounded-md"></div>
       <div class="block">
         <button
           type="submit"
-          class="block w-full text-center rounded-md bg-cyan-200 px-3 py-2 text-white"
+          class="block w-full text-center rounded-md bg-[#2C7075] px-3 py-2 text-white"
         >
           Create
         </button>
