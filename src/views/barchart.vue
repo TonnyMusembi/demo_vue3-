@@ -149,27 +149,7 @@ onMounted(() => {
         </div>
         <div class="text-sm">Failed Loans</div>
       </div>
-      <!-- <div
-        class="col shadow-md rounded-md w-2/3 py-2 px-2 bg-white-700 text-black"
-      >
-        <div class="text-sm font-medium font-gotham">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            class="w-6 h-6"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5z"
-            />
-          </svg>
-        </div>
-        <div class="text-sm">Failed Loans</div>
-      </div> -->
+
       <div
         class="col shadow-md rounded-md w-full py-2 px-2 bg-white-700 text-black"
       >
