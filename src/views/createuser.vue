@@ -1,6 +1,40 @@
+<script setup>
+import axios from "axios";
+import { ref, onMounted } from "vue";
+const shazam = ref();
+const games = () => {
+  console.log(shazam);
+  const payload = {
+    params: { term: "kiss the rain", locale: "en-US", offset: "0", limit: "5" },
+    headers: {
+      "X-RapidAPI-Key": "68a17b08dbmshe68484fe4f7905bp16ece9jsn2069f40c2728",
+      "X-RapidAPI-Host": "shazam.p.rapidapi.com",
+    },
+  };
+  const url = `https://shazam.p.rapidapi.com/search`;
+
+  axios
+    .get(url, payload)
+    .then((response) => {
+        shazam.value = response.data.tracks.hits;
+        console.log(shazam.value);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
+
+onMounted(() => {
+  games();
+});
+</script>
+
 <template>
   <div class="mx-auto w-1/2 p-5">
-    <!-- <div>Create User</div> -->
+    <button v-on:click="games">test</button>
+    <div v-for="(tracks, index) in shazam" :key="index">
+      <div>{{ tracks.snippet}}</div>
+    </div>
     <br />
     <form @submit.prevent="">
       <div class="text-sm mb-2 text-black-500 font-medium text-center">
@@ -50,7 +84,7 @@
       </div>
       <div class="block mb-3">
         <label for="" class="block text-sm font-medium text-black-900 mb-2"
-          >Confirm  password</label
+          >Confirm password</label
         >
         <input
           name="confirm password"

@@ -47,6 +47,9 @@ const generateOtp = (limit) => {
 };
 // console.log();
 
+const games = ()=>{
+    
+}
 onMounted(() => {
   show();
   generateOtp();
