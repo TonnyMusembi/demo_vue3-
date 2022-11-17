@@ -38,7 +38,7 @@
         <label
           for=""
           class="block mb-2 text-sm font-medium text-black-900 dark:text-black-300"
-          >Enter new password</label
+          >Enter password</label
         >
         <input
           name="new password"
@@ -50,7 +50,7 @@
       </div>
       <div class="block mb-3">
         <label for="" class="block text-sm font-medium text-black-900 mb-2"
-          >Confirm new password</label
+          >Confirm  password</label
         >
         <input
           name="Confirm new password"
