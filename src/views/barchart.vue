@@ -8,7 +8,7 @@ onMounted(() => {
     datasets: [
       {
         label: "Loans",
-        data: [0, 10, 5, 2, 20, 30, 45],
+        data: [100, 10, 5, 2, 20, 30, 45],
         backgroundColor: [
           "rgb(133, 105, 241)",
           "rgb(164, 101, 241)",
@@ -38,17 +38,17 @@ onMounted(() => {
 });
 </script>
 <template>
-     <div class="col-6 row-auto flex justify-center ">
-      <button
-        class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+  <div class="col-6 row-auto flex justify-center">
+    <button
+      class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+    >
+      <router-link :to="{ name: 'login_user' }" class="button primary"
+        >Graph</router-link
       >
-        <router-link :to="{ name: 'login_user' }" class="button primary"
-          >Odds</router-link
-        >
-      </button>
-    </div>
+    </button>
+  </div>
   <div class="relative px-4 py-3">
-    <div class="text-sm text-green-800 mb-3">Reports</div>
+    <div class="text-sm text-[#2C7075] mb-3">Reports</div>
     <div class="flex gap-6 overflow-scroll">
       <div
         class="col shadow-md rounded-md w-full py-1 px-2 bg-white-700 text-black"
@@ -207,7 +207,6 @@ onMounted(() => {
       <br />
       Percentage
     </div>
-
   </div>
   <div class="relative px-4 py-3"></div>
 </template>
