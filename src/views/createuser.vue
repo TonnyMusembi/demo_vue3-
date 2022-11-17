@@ -27,7 +27,7 @@
           >Phone Number</label
         >
         <input
-          name="phone_number"
+          name="phone-number"
           type="text"
           class="bg-gray-50 border border-white-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="phone number "
@@ -36,7 +36,7 @@
       </div>
       <div class="mb-2">
         <label
-          for=""
+          for="enter-password"
           class="block mb-2 text-sm font-medium text-black-900 dark:text-black-300"
           >Enter password</label
         >
@@ -53,7 +53,7 @@
           >Confirm  password</label
         >
         <input
-          name="Confirm new password"
+          name="confirm password"
           type="text"
           class="bg-gray-50 border border-white-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="confirm password "
