@@ -17,7 +17,7 @@ const games = () => {
     .get(url, payload)
     .then((response) => {
       shazam.value = response.data.tracks.hits;
-      console.log(shazam.value);
+    //   console.log(shazam.value);
     })
     .catch((error) => {
       console.log(error);
