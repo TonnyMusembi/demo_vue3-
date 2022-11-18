@@ -1,7 +1,7 @@
 <template>
   <div class="col-6 row-auto flex justify-center">
     <button
-      class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+      class="bg-green-800 text-white active:bg-green-800 font-bold lowercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
     >
       <router-link :to="{ name: 'createuser' }" class="button primary"
         >Create user</router-link
