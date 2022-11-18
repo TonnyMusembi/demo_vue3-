@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
   <div class="container mx-auto w-1/2 bg-gray-100 p-5">
     <div>Add Loan Product</div>
@@ -12,7 +14,6 @@
         <input
           name="company"
           type="text"
-          id="text"
           class="bg-gray-50 border border-white-300 text-white-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="califam holdings limited "
           required
