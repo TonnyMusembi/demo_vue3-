@@ -14,6 +14,7 @@ onMounted(() => {
           "rgb(164, 101, 241)",
           "rgb(101, 143, 241)",
         ],
+        hoverOffset: 4,
 
         borderColor: "hsl(252, 82.9%, 67.8%)",
 
