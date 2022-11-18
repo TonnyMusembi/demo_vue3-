@@ -44,9 +44,11 @@
               </span>
               <input
                 name="Password"
+                type="password"
+                required
                 class="block rounded-md w-full py-2 px-3 border outline-none focus-visible:border-cyan-400"
               />
-              type="password" required />
+              <!-- type="password" required /> -->
             </div>
             <div class="block px-4 py-2 text-gray-600 text-sm rounded-md"></div>
             <div class="block">
