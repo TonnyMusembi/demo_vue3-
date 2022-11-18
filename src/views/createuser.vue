@@ -17,7 +17,7 @@ const games = () => {
     .get(url, payload)
     .then((response) => {
       shazam.value = response.data.tracks.hits;
-    //   console.log(shazam.value);
+      //   console.log(shazam.value);
     })
     .catch((error) => {
       console.log(error);
@@ -31,10 +31,10 @@ onMounted(() => {
 
 <template>
   <div class="mx-auto w-1/2 p-5">
-    <button v-on:click="games">test</button>
+    <!-- <button v-on:click="games">Api call</button>
     <div v-for="(tracks, index) in shazam" :key="index">
       <div>{{ tracks.snippet }}</div>
-    </div>
+    </div> -->
     <br />
     <form @submit.prevent="">
       <div class="text-sm mb-2 text-black-500 font-medium text-center">
