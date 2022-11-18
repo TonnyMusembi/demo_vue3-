@@ -51,7 +51,7 @@ onMounted(() => {
     <div class="text-sm text-[#2C7075] mb-3">Reports</div>
     <div class="flex gap-6 overflow-scroll">
       <div
-        class="col shadow-md rounded-md w-full py-1 px-2 bg-white-700 text-black"
+        class=" shadow-lg rounded-md w-full py-1 px-2 bg-white text-black"
       >
         <div>
           <svg width="32" height="32" viewBox="0 0 16 16">
@@ -66,7 +66,7 @@ onMounted(() => {
         <div class="text-sm font-medium">Registered Companies</div>
       </div>
       <div
-        class="col shadow-md rounded-md w-full py-1 px-2 bg-white-700 text-black"
+        class="shadow-lg rounded-md w-full py-1 px-2 bg-white text-black"
       >
         <div>
           <svg
@@ -87,7 +87,7 @@ onMounted(() => {
         <div class="text-sm font-medium">Registered Employees</div>
       </div>
       <div
-        class="col shadow-md rounded-md w-full py-1 px-2 bg-white-700 text-black"
+        class="shadow-lg rounded-md w-full py-1 px-2 bg-white-700 text-black"
       >
         <div>
           <svg
@@ -107,9 +107,7 @@ onMounted(() => {
         </div>
         <div class="text-sm font-medium">No of loans Disbursed</div>
       </div>
-      <div
-        class="col shadow-md rounded-md w-full py-2 px-2 bg-white-700 text-black"
-      >
+      <div class="shadow-lg rounded-md w-full py-2 px-2 bg-white text-black">
         <div class="text-sm font-medium font-gotham">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -128,9 +126,7 @@ onMounted(() => {
         </div>
         <div class="text-sm">Amount Disbursed</div>
       </div>
-      <div
-        class="col shadow-md rounded-md w-full py-2 px-2 bg-white-700 text-black"
-      >
+      <div class="shadow-lg rounded-md w-full py-2 px-2 bg-white text-black">
         <div class="text-sm font-medium font-gotham">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -150,9 +146,7 @@ onMounted(() => {
         <div class="text-sm">Failed Loans</div>
       </div>
 
-      <div
-        class="col shadow-md rounded-md w-full py-2 px-2 bg-white-700 text-black"
-      >
+      <div class="shadow-lg rounded-md w-full py-2 px-2 bg-white text-black">
         <div class="text-sm font-small font-gotham"></div>
         <div>
           <svg
@@ -173,9 +167,7 @@ onMounted(() => {
         <div class="text-sm">Total collections</div>
       </div>
     </div>
-    <div
-      class="grid grid-cols-3 mt-6 shadow-md border overflow-hidden bg-white"
-    >
+    <div class="block mt-6 shadow-md border overflow-hidden bg-white">
       <div class="col-span-2 bg-white rounded-md py-3 px-4">
         <div class="text-md text-gray-500 font-medium font-gotham">
           Purchases
