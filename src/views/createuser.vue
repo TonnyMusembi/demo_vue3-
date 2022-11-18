@@ -16,8 +16,8 @@ const games = () => {
   axios
     .get(url, payload)
     .then((response) => {
-        shazam.value = response.data.tracks.hits;
-        console.log(shazam.value);
+      shazam.value = response.data.tracks.hits;
+      console.log(shazam.value);
     })
     .catch((error) => {
       console.log(error);
@@ -33,7 +33,7 @@ onMounted(() => {
   <div class="mx-auto w-1/2 p-5">
     <button v-on:click="games">test</button>
     <div v-for="(tracks, index) in shazam" :key="index">
-      <div>{{ tracks.snippet}}</div>
+      <div>{{ tracks.snippet }}</div>
     </div>
     <br />
     <form @submit.prevent="">

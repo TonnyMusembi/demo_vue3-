@@ -23,7 +23,7 @@ const show = () => {
   axios
     .get(url, payload)
     .then((response) => {
-      console.log(response.data.data);
+    //   console.log(response.data.data);
       odds.value = response.data.data;
     })
     .catch((error) => {
@@ -48,7 +48,7 @@ const generateOtp = (limit) => {
 // console.log();
 
 const games = ()=>{
-    
+
 }
 onMounted(() => {
   show();

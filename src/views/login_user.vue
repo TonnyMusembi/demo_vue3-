@@ -1,14 +1,13 @@
 <template>
-     <div class="col-6 row-auto flex justify-center ">
-      <button
-        class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+  <div class="col-6 row-auto flex justify-center">
+    <button
+      class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+    >
+      <router-link :to="{ name: 'createuser' }" class="button primary"
+        >Create user</router-link
       >
-        <router-link :to="{ name: 'createuser' }" class="button primary"
-          >Create user</router-link
-        >
-      </button>
-    </div>
-  <!-- <div class="container mx-auto w-full bg-gray-100"> -->
+    </button>
+  </div>
 
   <div class="flex justify-center h-full">
     <div class="h-full items-center p-8 pt-48">
@@ -18,7 +17,6 @@
             <router-link to=""
               ><img src="../assets/vue.svg" style="margin-left: 10px"
             /></router-link>
-            <!-- <h2><small></small></h2> -->
           </div>
           <br />
           <form @submit.prevent="">
@@ -35,7 +33,6 @@
                 class="block rounded-md w-full py-2 px-3 border outline-none focus-visible:border-cyan-400"
                 maxlength="12"
                 placeholder="07xxxxxxxx"
-             
                 required
               />
             </div>
@@ -47,10 +44,9 @@
               </span>
               <input
                 name="Password"
-                class="block rounded-md w-full py-2 px-3 border outline-none focus-visible:border-cyan-400">
-                type="password"
-                required
+                class="block rounded-md w-full py-2 px-3 border outline-none focus-visible:border-cyan-400"
               />
+              type="password" required />
             </div>
             <div class="block px-4 py-2 text-gray-600 text-sm rounded-md"></div>
             <div class="block">
@@ -73,8 +69,9 @@
   </div>
   <!-- </div> -->
 </template>
-// <script setup>
-
+//
+<script setup>
 // import { ref, } from 'vue';
 // const phonenumber = ref();
-// </script>
+//
+</script>

@@ -17,7 +17,7 @@ const next = () => {
   axios
     .get(url, payload)
     .then((response) => {
-      console.log(response.data);
+    //   console.log(response.data);
       odds.value = response.data.data;
     })
     .catch((error) => {
