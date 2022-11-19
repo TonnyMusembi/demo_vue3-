@@ -169,7 +169,7 @@ onMounted(() => {
         <div class="text-md text-gray-500 font-medium font-gotham">
           Purchases
         </div>
-        <canvas id="myChart" width="500" height="250"></canvas>
+        <canvas id="myChart" width="200" height="100"></canvas>
       </div>
     </div>
     <div>
