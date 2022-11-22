@@ -119,7 +119,6 @@ onMounted(() => {
 
   <div class="col-6 row-auto flex justify-center">
     <h2>Showing Games Predictions</h2>
-
     <button
       class="bg-green-800 text-white active:bg-green-800 font-bold lowercasetext-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
     >
@@ -128,7 +127,7 @@ onMounted(() => {
       >
     </button>
   </div>
-  <!-- <div class="relative-4 p-4 w-1/2 columns-md-6 border-b bg-gray-50">
+  <div class="relative-4 p-4 w-1/2 columns-md-6 border-b bg-gray-50">
     <input
       class="rounded-md px-4 py-3 flex justify-center w-full border-2 border-gray-300 mb-1"
       placeholder="Search by name  "
@@ -137,7 +136,7 @@ onMounted(() => {
     />
 
     <div class="text-xs text-gray-400 mt-1 italic">Press Enter to search</div>
-  </div> -->
+  </div>
 
   <div class="p-6 max-w-sm mx-auto">
     <h1></h1>
