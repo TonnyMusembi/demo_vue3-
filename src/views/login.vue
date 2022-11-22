@@ -23,7 +23,6 @@ const next = () => {
     .catch((error) => {
       console.log(error);
     });
-  // console.log(net);
 };
 const filteredTickets = () => {
   if (odds.value === 0) return;
@@ -119,7 +118,6 @@ onMounted(() => {
   </div>
 
   <div class="col-6 row-auto flex justify-center">
-    <!-- <div>showing Predictions fro Teams</div> -->
     <h2>Showing Games Predictions</h2>
 
     <button
