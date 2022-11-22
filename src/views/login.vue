@@ -20,7 +20,7 @@ const next = () => {
       console.log(response.data);
       odds.value = response.data.data;
       if (success === true) {
-        return true;
+        return  redirect ('/');
         console.log(success);
       }
     })
