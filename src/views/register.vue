@@ -4,6 +4,7 @@ export default {
   data() {
     return {
       odds: [],
+      scores: [],
     };
   },
   methods: {
@@ -24,13 +25,26 @@ export default {
           console.log(response.data);
           this.odds = response.data.data;
         })
-        .catch((error) => {
-          console.log(error);
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+
+    async getScores() {
+      const url = ``;
+      await axios
+        .get(url)
+        .then((res) => {
+          console.log(res).data;
+        })
+        .catch((err) => {
+          console.log(err);
         });
     },
   },
   mounted() {
     this.games();
+    this.getScores();
   },
 };
 </script>
