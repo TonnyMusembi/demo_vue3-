@@ -23,7 +23,7 @@ const show = () => {
   axios
     .get(url, payload)
     .then((response) => {
-    //   console.log(response.data.data);
+      //   console.log(response.data.data);
       odds.value = response.data.data;
     })
     .catch((error) => {
@@ -47,14 +47,10 @@ const generateOtp = (limit) => {
 };
 // console.log();
 
-const games = ()=>{
-    const payload={
-
-    }
-    const url =``
-
-
-}
+const games = () => {
+  const payload = {};
+  const url = ``;
+};
 onMounted(() => {
   show();
   generateOtp();
@@ -120,7 +116,7 @@ onMounted(() => {
     <div class="col-6 shadow-md rounded-md py-1 px-2 bg-white-700 text-black">
       <div class="text-sm font-medium font-gotham">Home Teams</div>
       <div class="text-2xl" v-for="(odd, index) in odds" :key="index">
-        <h1>{{ odd.sport_nice }}</h1>
+        <h1>{{ odd.group }}</h1>
       </div>
     </div>
   </div>
