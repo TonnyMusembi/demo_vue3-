@@ -120,7 +120,6 @@ onMounted(() => {
       </div>
     </nav>
   </div>
-
   <div class="col-6 row-auto flex justify-center">
     <h2>Showing Games Predictions</h2>
     <button
