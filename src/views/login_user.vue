@@ -1,3 +1,9 @@
+<script setup>
+// import { ref, } from 'vue';
+// const phonenumber = ref();
+//
+</script>
+
 <template>
   <div class="col-6 row-auto flex justify-center">
     <button
@@ -72,8 +78,3 @@
   <!-- </div> -->
 </template>
 //
-<script setup>
-// import { ref, } from 'vue';
-// const phonenumber = ref();
-//
-</script>
