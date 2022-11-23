@@ -1,4 +1,4 @@
-<script setup>
+<script setup >
 import { onMounted, ref } from "vue";
 import axios from "axios";
 //const net = ref("");

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 // import { ref, } from 'vue';
 // const phonenumber = ref();
 //
@@ -35,6 +35,7 @@
                 >
               </span>
               <input
+                type="tel"
                 name="Phone Number"
                 class="block rounded-md w-full py-2 px-3 border outline-none focus-visible:border-cyan-400"
                 maxlength="12"
