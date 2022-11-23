@@ -1,4 +1,4 @@
-<script setup >
+<script setup>
 import { onMounted, ref } from "vue";
 import axios from "axios";
 //const net = ref("");
@@ -22,6 +22,8 @@ const next = () => {
       if (success === true) {
         return redirect("/login_user");
         console.log(success);
+      } else {
+        return error;
       }
     })
     .catch((error) => {
