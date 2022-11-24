@@ -30,7 +30,7 @@ const next = () => {
       console.log(error);
     });
 };
-const filteredTickets = () => {
+const filteredOdds = () => {
   if (odds.value === 0) return;
   odds.value = odds.value.filter((odd) =>
     odd.home_team.toLowerCase().includes(searchValue.value.toLowerCase())
@@ -137,7 +137,7 @@ onMounted(() => {
       class="rounded-md px-4 py-3 flex justify-center w-full border-2 border-gray-300 mb-1"
       placeholder="Search by name  "
       v-model="searchValue"
-      @keydown="filteredTickets"
+      @keydown="filteredOdds"
     />
 
     <div class="text-xs text-gray-400 mt-1 italic">Press Enter to search</div>

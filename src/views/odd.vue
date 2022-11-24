@@ -30,7 +30,7 @@ const show = () => {
       console.log(error);
     });
 };
-const filteredTickets = () => {
+const filteredOdds = () => {
   if (odds.value === 0) return;
   odds.value = odds.value.filter((odd) =>
     odd.home_team.toLowerCase().includes(searchValue.value.toLowerCase())
@@ -43,7 +43,7 @@ const generateOtp = (limit) => {
   let OTP = "";
   for (let i = 0; i < limit; i++) {}
   return OTP;
-  // console.log(OTP);
+  console.log(OTP);
 };
 // console.log();
 
@@ -57,14 +57,14 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="col-6 row-auto text-center">
-    <button
-      class="bg-green-800 text-white active:bg-green-800 font-bold uppercase text-sm px-1 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-    >
+  <div class="flex justify-center">
+    <!-- <button
+      class="bg-green-800 text-white active:bg-green-800 text-sm py-1 pxrounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+    > -->
       <router-link :to="{ name: 'forgot_password' }" class="button primary">
         Register</router-link
       >
-    </button>
+    <!-- </button> -->
   </div>
   <div class="relative p-4 w-1/2 columns-md-6 border-b bg-gray-50">
     <!-- <svg
@@ -100,7 +100,7 @@ onMounted(() => {
       class="rounded-md px-4 py-3 flex justify-center w-full border-2 border-gray-300 mb-1"
       placeholder="Search by name  "
       v-model="searchValue"
-      @keydown="filteredTickets"
+      @keydown="filteredOdds"
     />
 
     <div class="text-xs text-gray-400 mt-1 italic">Press Enter to search</div>
