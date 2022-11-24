@@ -52,6 +52,7 @@ const games = () => {
   const url = ``;
 };
 onMounted(() => {
+  games();
   show();
   generateOtp();
 });
@@ -61,9 +62,9 @@ onMounted(() => {
     <!-- <button
       class="bg-green-800 text-white active:bg-green-800 text-sm py-1 pxrounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
     > -->
-      <router-link :to="{ name: 'forgot_password' }" class="button primary">
-        Register</router-link
-      >
+    <router-link :to="{ name: 'forgot_password' }" class="button primary">
+      Register</router-link
+    >
     <!-- </button> -->
   </div>
   <div class="relative p-4 w-1/2 columns-md-6 border-b bg-gray-50">
