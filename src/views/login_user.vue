@@ -2,6 +2,20 @@
 // import { ref, } from 'vue';
 // const phonenumber = ref();
 //
+
+
+// const test = async () => {
+//   const payload = {};
+
+//   try {
+//     const url = ``;
+//     const res = await fetch(url,payload);
+//     const data = await res;
+//     console.log(data);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
 </script>
 
 <template>
@@ -75,4 +89,6 @@
       </div>
     </div>
   </div>
+
+
 </template>

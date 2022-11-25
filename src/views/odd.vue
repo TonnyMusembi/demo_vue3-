@@ -5,6 +5,7 @@ import axios from "axios";
 const odds = ref("");
 const digits = ref("");
 const searchValue = ref("");
+
 const show = () => {
   const payload = {
     params: {
@@ -28,6 +29,17 @@ const show = () => {
     })
     .catch((error) => {
       console.log(error);
+    });
+};
+const login = () => {
+  const url = `https://spotify81.p.rapidapi.com/top_200_tracks`;
+  axios
+    .get(url)
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      consloe.log(err);
     });
 };
 const filteredOdds = () => {
@@ -55,6 +67,7 @@ onMounted(() => {
   games();
   show();
   generateOtp();
+  login();
 });
 </script>
 <template>
