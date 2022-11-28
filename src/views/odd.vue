@@ -24,7 +24,7 @@ const show = () => {
   axios
     .get(url, payload)
     .then((response) => {
-      //   console.log(response.data.data);
+      // console.log(response.data.data);
       odds.value = response.data.data;
     })
     .catch((error) => {
@@ -72,9 +72,6 @@ onMounted(() => {
 </script>
 <template>
   <div class="flex justify-center">
-    <!-- <button
-      class="bg-green-800 text-white active:bg-green-800 text-sm py-1 pxrounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-    > -->
     <router-link :to="{ name: 'forgot_password' }" class="button primary">
       Register</router-link
     >
